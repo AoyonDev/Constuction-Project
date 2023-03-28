@@ -1,0 +1,1220 @@
+/* ====== COMMON CSS START ====== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: unset !important;
+}
+
+/* ====== COMMON CSS   END ====== */
+
+/* ====== ANIMATE CSS   END ====== */
+
+.top-scroll-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #18A7B9;
+    position: fixed;
+    bottom: 65px;
+    right: 65px;
+    z-index: 999;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    animation-name: scroll-btn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll-btn {
+
+    from {
+        bottom: 65px;
+        background: #18A7B9;
+        color: #313131;
+    }
+
+    to {
+        bottom: 100px;
+        background: #b91818;
+        color: #f1f1f1;
+    }
+}
+
+.top-scroll-btn i {
+    color: #313131;
+    font-size: 30px;
+    margin-top: 10px;
+    animation-name: scroll-btn-icon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll-btn-icon {
+
+    from {
+        color: #313131;
+    }
+
+    to {
+        color: #f1f1f1;
+    }
+}
+
+/* ====== ANIMATE CSS   END ====== */
+
+
+
+
+/* ====== NAVBAR CSS START ====== */
+.navbar {
+    margin-top: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    animation-name: navbar;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes navbar {
+    from {
+        margin-top: -70px;
+    }
+
+    to {
+        margin-top: 70px;
+    }
+}
+
+.navbar-bg {
+    padding: 10px 0px;
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+.navbar-light .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #18A7B9;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #18A7B9;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+    transition: all linear 0.4s;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: none;
+    background: #313131;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+}
+
+
+
+
+/* ====== NAVBAR CSS   END ====== */
+
+
+
+
+
+
+
+
+
+
+/* ====== BANNER CSS START ====== */
+
+
+
+/* .bg-right-img{
+    position: relative;
+}
+.bg-right-img img{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+}
+.banner-shape-imgs {
+    position: absolute;
+    top: 215px;
+    right: 83%;
+    transform: rotate(90deg);
+    z-index: -3;
+}
+.banner-bottom-shape-imgs {
+    position: absolute;
+    bottom: -85px;
+    right: 10%;
+    transform: rotate(180deg);
+    z-index: -3;
+}
+
+.banner-cover-wrapper {
+    position: absolute;
+    top: 0;
+    right: 225px;
+    z-index: -5;
+} */
+
+
+#banner-part {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.banner-text {
+    margin-top: 225px;
+    animation-name: banner-text;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes banner-text {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+} */
+
+.banner-text span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    color: #18A7B9;
+}
+
+.banner-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.banner-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #313131;
+    padding-top: 40px;
+}
+
+.banner-btns {
+    display: flex;
+    margin-left: -15px;
+    margin-top: 40px;
+    animation-name: banner-btns;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes banner-btns {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+} */
+
+.banner-btns button {
+    height: 64px;
+    width: 214px;
+    background: transparent;
+    border: 1px solid #18A7B9;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 5px;
+    color: #18A7B9;
+    margin: 0px 15px;
+    transition: all linear 0.4s;
+}
+
+.banner-btns button:hover {
+    background: #18A7B9;
+    border: #18A7B9;
+    color: #FFF;
+    filter: drop-shadow(0px 15px 30px #00e1ff44);
+}
+
+.banner-counter {
+    display: flex;
+    /* animation-name: banner-counter;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1; */
+}
+
+/* @keyframes banner-counter {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+} */
+
+.counter-left {
+    margin-right: 50px;
+    position: relative;
+}
+
+.counter-left h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #313131;
+    padding-bottom: 15px;
+}
+
+.counter-left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #313131;
+}
+
+.counter-shape {
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    z-index: -7;
+}
+
+.banner-btns {
+    position: relative;
+}
+
+.banner-line-shape {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: -10;
+}
+
+
+
+
+
+
+
+
+
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    animation-name: banner-wrapper;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes banner-wrapper {
+    from {
+        margin: -100%;
+    }
+
+    to {
+        margin: 0%;
+    }
+}
+
+.bg-right-img {
+    position: relative;
+    top: 0px;
+    left: -125px;
+}
+
+.bg-right-img img {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+}
+
+.banner-shape-imgs {
+    position: absolute;
+    top: 215px;
+    right: 70%;
+    transform: rotate(90deg);
+    z-index: -5;
+}
+
+.banner-bottom-shape-imgs {
+    position: absolute;
+    bottom: -85px;
+    right: -35%;
+    transform: rotate(180deg);
+    z-index: -5;
+}
+
+
+/* ====== BANNER CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== LOGO CSS START ====== */
+#logo-part {
+    margin-top: 175px;
+}
+
+.logo-col {
+    margin: 0 auto;
+}
+
+.logo-bg {
+    background: #f0f0f0;
+    padding: 75px 85px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 150px;
+}
+
+/* ====== LOGO CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== CHOOSE PART CSS START ====== */
+
+#choose-part {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.choose-row {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+
+
+.choose-btn {}
+
+.choose-btn p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6B6B6B;
+}
+
+.choose-btn a button {
+    height: 64px;
+    width: 214px;
+    background: #18A7B9;
+    border: 1px solid #18A7B9;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 5px;
+    color: #FFFFFF;
+    margin: 30px 15px;
+    transition: all linear 0.4s;
+}
+
+.choose-btn a:hover {
+    filter: drop-shadow(0px 15px 30px #00e1ff44);
+}
+
+.choose-text {
+    margin-top: -30px;
+}
+
+.choose-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    color: #313131;
+}
+
+
+
+
+/* ====== CHOOSE PART CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== EXPERIANCE CSS START ====== */
+
+#experiance-part {
+    margin-bottom: 100px;
+}
+
+.experiance-row {
+    display: flex;
+    margin: 0 auto;
+}
+
+.experiance-bg img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 292px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.experiance-items {
+    margin-top: 180px;
+}
+
+.experiance-text {
+    display: flex;
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.experiance-text h4 {
+    margin-right: 35px;
+    margin-top: -25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.experiance-text p {
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6B6B6B;
+    text-align: justify;
+}
+
+.experiance-shape {
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    z-index: -11;
+}
+
+
+
+/* ====== EXPERIANCE CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== OUR TEAM CSS START ====== */
+
+#our-team {
+    margin: 150px 0px;
+}
+
+.common-title-row {
+    margin: 0 auto;
+}
+
+.common-title {
+    text-align: center;
+}
+
+.common-title h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    color: #313131;
+    padding-bottom: 30px;
+}
+
+.common-title p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20x;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6B6B6B;
+    padding-bottom: 80px;
+}
+
+
+
+
+.team-item {
+    text-align: center;
+    padding: 30px;
+    background: #f1f1f1;
+    border-radius: 5%;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-icons i {
+    color: #F0BB00;
+    font-size: 24px;
+    transition: all linear .4s;
+}
+
+.team-item:hover .team-icons i {
+    color: #18A7B9;
+    animation-name: team-icon;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes team-icon {
+    from {
+        color: #18A7B9;
+    }
+
+    to {
+        color: #f00000;
+    }
+}
+
+.team-img {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.team-text {}
+
+.team-text h3 {
+    padding-bottom: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24x;
+    font-weight: 400;
+    color: #313131;
+}
+
+.team-text h4 {
+    padding-bottom: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12x;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+
+.team-text h5 {
+    padding-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18x;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+
+.team-text p {
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17x;
+    font-weight: 400;
+    color: #18A7B9;
+}
+
+
+/* ====== OUR TEAM CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== CEO PART CSS START ====== */
+
+#ceo-part {
+    background: url(../images/ceo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 140px;
+    position: relative;
+    z-index: 1;
+}
+
+#ceo-part::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: -1;
+}
+
+.ceo-row {
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.upper-colon {
+    margin-bottom: 50px;
+}
+
+.upper-colon h4 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.upper-colon img {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+.middle-text img {
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+}
+
+.middle-text {
+    color: #FFFFFF;
+    text-align: justify;
+    width: 860px;
+    margin: 0 auto;
+}
+
+.middle-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.middle-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+
+
+
+/* ====== CEO PART CSS   END ====== */
+
+
+
+
+
+
+
+/* ====== CONTACT CSS START ====== */
+
+#contact-part {
+    margin: 100px 0px;
+}
+
+.contact-mail {
+    margin-top: 120px;
+}
+
+.mail-info {
+    margin-top: 20px;
+}
+
+.mail-info:hover {
+    animation-name: mail-info;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes lable {
+    0% {
+        background: green;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+
+
+
+.mail-info label {
+    display: block;
+}
+
+
+
+
+.mail-info input {
+    width: 480px;
+    padding: 10px;
+    background: #F9F9F9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #313131;
+    border: 2px solid #F4F4F4;
+    border-radius: 7px;
+
+}
+
+.mail-info .massage {
+    width: 480px;
+    height: 200px;
+    background: #F9F9F9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #313131;
+    border: 2px solid #F4F4F4;
+    border-radius: 7px;
+}
+
+.mail-btn a {
+    transition: all linear 0.4s;
+}
+
+.mail-btn a button {
+    height: 64px;
+    width: 214px;
+    background: #18A7B9;
+    border: 1px solid #18A7B9;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 4px;
+    color: #FFFFFF;
+    margin: 30px 15px;
+}
+
+.mail-btn a:hover {
+    filter: drop-shadow(0px 15px 30px #00e1ff44);
+}
+
+
+/* ====== CONTACT CSS   END ====== */
+
+
+
+
+
+
+
+
+
+
+
+/* ====== BLOGS CSS START ====== */
+
+#blog-part {
+    margin-bottom: 100px;
+}
+
+.blog-row {
+    display: flex;
+    margin: 0 auto !important;
+}
+
+
+.blog-img {
+    position: relative;
+    text-align: center;
+}
+
+.blog-img-overlay {
+    position: relative;
+}
+
+.blog-img-overlay img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999999999;
+}
+
+.blog-text {
+    position: absolute;
+    bottom: 5%;
+    left: 28%;
+    transition: all linear 0.5s;
+}
+
+.blog-text h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.blog-text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+
+.blog-btn {
+    margin-bottom: -130px;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+.blog-btn a {
+    transition: all linear 0.4s;
+}
+
+.blog-btn a button {
+    height: 64px;
+    width: 214px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 4px;
+    color: #FFFFFF;
+    margin: 30px 15px;
+}
+
+.blog-btn a:hover {
+    filter: drop-shadow(0px 15px 30px #00e1ff);
+}
+
+
+.blog-img:hover .blog-text {
+    bottom: 30%;
+}
+
+.blog-img:hover .blog-btn {
+    opacity: 1;
+}
+
+/* .blog-img:hover {
+    scale: 1.2;
+} */
+
+/* ====== BLOGS CSS   END ====== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== SUBSCRIBE CSS START ====== */
+
+#subcribe-part {
+    margin: 140px 0px;
+}
+
+
+
+.sub-btn {
+    text-align: center;
+    position: relative;
+}
+
+.sub-btn i {
+    position: absolute;
+    top: 55px;
+    left: 53%;
+    transition: all linear 0.5s;
+}
+
+/* 
+.sub-btn i{
+    animation: sub-btn-i;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes sub-btn-i {
+    0%{
+        left: 53%;
+    }
+    50%{
+        left: 55%;
+    }
+    100%{
+        left: 55%;
+    }
+} */
+
+.sub-btn button {
+    height: 64px;
+    width: 214px;
+    background: #18A7B9;
+    border: 1px solid #18A7B9;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 4px;
+    color: #FFFFFF;
+    margin: 30px 15px;
+    transition: all linear 0.4s;
+}
+
+.sub-btn button:hover {
+    filter: drop-shadow(0px 15px 30px #00e1ff);
+}
+
+/* .sub-btn button:hover .fa-arrow-right{
+    margin-left: 20px;
+} */
+/* .fa-arrow-right:before {
+    content: "\f061";
+} */
+
+
+
+/* ====== SUBSCRIBE CSS   END ====== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== FOOTER CSS START ====== */
+
+footer {
+    margin: 140px 0px;
+}
+
+.fotter-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #18A7B9;
+    margin-bottom: 30px;
+}
+
+.foter-logo-part p {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+
+.foter-logo-part p span {
+    display: block;
+}
+
+.foter-logo-part a {
+    /* height: 30px;
+    width: 30px;
+    background: #18A7B9; */
+    margin-right: 15px;
+    transition: all linear 0.5s;
+}
+
+.foter-logo-part a i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background: #18A7B9;
+    color: #FFFFFF;
+}
+
+.foter-logo-part a:hover {
+    filter: drop-shadow(0px 15px 30px #00e1ff);
+}
+
+
+.resource {
+    text-align: left;
+}
+
+.resource h4 {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.resource a {
+    display: block !important;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B6B6B;
+    transition: all linear 0.5s;
+}
+
+.resource a:hover {
+    color: #18A7B9;
+}
+
+
+
+.company {
+    text-align: left;
+}
+
+.company h4 {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.company a {
+    display: block !important;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B6B6B;
+    transition: all linear 0.5s;
+}
+
+.company a:hover {
+    color: #18A7B9;
+}
+
+.touch {
+    text-align: left;
+}
+
+.touch h4 {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.touch input {
+    padding: 10px;
+    background: #F9F9F9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #313131;
+    border: 2px solid #F4F4F4;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+/* ====== FOOTER CSS   END ====== */
